@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{{name}}</h1>
+
+    
+    <form action="https://formsubmit.co/faleyeenny@gmail.com" method="POST" class="contact-form">
+    
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next">
+
+    
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" rows="4" placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    {% endblock %}
